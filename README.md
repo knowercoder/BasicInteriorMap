@@ -11,3 +11,4 @@ Unity version used: 2022.3 LTS
 
 ## Interior mapping with animated terxture / furniture plane
 - ![with animated texture](https://github.com/knowercoder/InteriorMapping/blob/main/Media/InteriorMap_Animated.gif)
+- [Watch tutorial](https://www.youtube.com/watch?v=4oJ5gbeqHBQ)
