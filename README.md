@@ -1,7 +1,5 @@
 # InteriorMapping
-Interior mapping shader for unity URP using shadergraph and hlsl. The code follows the techniques given in the research paper by Joost van Dongen.
-
-Research paper: https://www.proun-game.com/Oogst3D/CODING/InteriorMapping/InteriorMapping.pdf
+Interior mapping shader for unity URP using shadergraph and hlsl. The code follows the techniques given in the [research paper](https://www.proun-game.com/Oogst3D/CODING/InteriorMapping/InteriorMapping.pdf) by Joost van Dongen.
 
 Unity version used: 2022.3 LTS
 
