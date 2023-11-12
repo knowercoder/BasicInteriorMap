@@ -11,11 +11,12 @@ float4 checkIfCloser(float3 rayDir, float3 rayStartPos, float3 planePos, float3 
     float3 intersectPos = rayStartPos + rayDir * t;
     float2 ipos;
 
-    if( abs(planeNormal.x) == 1 )
+    //check the wall and assign the correct UV to ipos
+    if( abs(planeNormal.x) == 1 ) // Left and Right wall
     ipos = float2(intersectPos.z, intersectPos.y);
-    else if(abs(planeNormal.y) == 1)
+    else if(abs(planeNormal.y) == 1) // Ceiling and floor
     ipos = float2(intersectPos.x, intersectPos.z);
-    else
+    else    // Front and Back wall
     ipos = float2(planeNormal.z * intersectPos.x, intersectPos.y);
     
 

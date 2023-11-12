@@ -11,11 +11,12 @@ float4 checkIfCloser(float3 rayDir, float3 rayStartPos, float3 planePos, float3 
     float3 intersectPos = rayStartPos + rayDir * t;
     float2 ipos;
 
-    if( abs(planeNormal.x) == 1 )
+    //check the wall and assign the correct UV to ipos
+    if( abs(planeNormal.x) == 1 ) // Left and Right wall
     ipos = float2(intersectPos.z, intersectPos.y);
-    else if(abs(planeNormal.y) == 1)
+    else if(abs(planeNormal.y) == 1) // Ceiling and floor
     ipos = float2(intersectPos.x, intersectPos.z);
-    else
+    else   // Front and Back wall
     ipos = float2(planeNormal.z * intersectPos.x, intersectPos.y);
     
 
@@ -33,6 +34,8 @@ float4 checkIfCloser(float3 rayDir, float3 rayStartPos, float3 planePos, float3 
     return colorAndDist;
 }
 
+//returns numbers 0, 1, 2, 3, 4 at succesive time interval. 
+//This is for selecting the texture, in sequence, from the furniture plane texture array
 float GetIncermentingValue(float maxvalue){
     float count = _Time.y;
     float fraction = frac(count);
@@ -93,6 +96,7 @@ UnityTexture2DArray CubeTex, UnityTexture2DArray FurnitureTex, out float4 colorA
 
         colorAndDist = checkIfCloser(rayDir, rayStartPos, wallPos, rightVec, CubeTex, 2, colorAndDist, ss, roomCount);
 
+        // we are inserting the furniture plane just before the back wall
         if(dot(rightVec, rayDir) > 0.6){
         float3 Furniturepos = float3(wallPos.x - 0.1, 0 , 0);
         colorAndDist = checkIfCloser(rayDir, rayStartPos, Furniturepos, rightVec, FurnitureTex, GetIncermentingValue(5), colorAndDist, ss, roomCount);
