@@ -1,7 +1,7 @@
 # BasicInteriorMap
 This project is the demonstartion of the Interior mapping shader techniques proposed in the [research paper](https://www.proun-game.com/Oogst3D/CODING/InteriorMapping/InteriorMapping.pdf) by Joost van Dongen. The shader is written for unity URP with Shader graph and HLSL.
 
-[Habrador's repository](https://github.com/Habrador/Unity-Advanced-Shaders-Tutorial) helped me to get started with interior mapping. Understand how this shader works [here](https://www.habrador.com/tutorials/shaders/2-interior-mapping/).
+[Habrador's repository](https://github.com/Habrador/Unity-Advanced-Shaders-Tutorial) helped me to get started with interior mapping.
 
 Unity version used: 2022.3 LTS
 
