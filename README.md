@@ -9,6 +9,9 @@ Unity version used: 2022.3 LTS
 
 https://github.com/knowercoder/InteriorMapping/assets/43854177/48947d87-b34a-4459-9055-e4f45c60bdf2
 
+[Watch video tutorial here](https://youtu.be/-JkhM1MJ-7c)
+
+
 ### Interior mapping with animated terxture / furniture plane
 
 https://github.com/knowercoder/InteriorMapping/assets/43854177/830b842c-12e4-4f2d-94d2-9b2f6b3b7228
