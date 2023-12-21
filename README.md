@@ -15,3 +15,5 @@ https://github.com/knowercoder/InteriorMapping/assets/43854177/48947d87-b34a-445
 ### Interior mapping with animated terxture / furniture plane
 
 https://github.com/knowercoder/InteriorMapping/assets/43854177/830b842c-12e4-4f2d-94d2-9b2f6b3b7228
+
+[Watch video tutorial here](https://youtu.be/Sl4SSrk5XQM)
